@@ -33,7 +33,7 @@ export default function Converter() {
                 // Inline code
                 .replace(/`([^`]+)`/g, '$1')
                 // Horizontal rules
-                .replace(/^-{3,}|^\*{3,}|^*_{3,}/gm, '')
+                .replace(/^-{3,}|^\*{3,}|^_{3,}/gm, '')
                 // List items (unordered)
                 .replace(/^[\*\-\+]\s+/gm, '')
                 // List items (ordered)
